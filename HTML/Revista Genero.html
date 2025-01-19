@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Género</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #9F2241;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .header-content img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .header-content h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+        nav {
+            background: #BC955C;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .article {
+            background: #f4f4f4;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .article img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        #revista-pdf {
+            margin: 2rem 0;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        #revista-pdf iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #galeria {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        #galeria .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        #galeria .articles img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #audios {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 0.5rem;
+            background: #f4f4f4;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        #audios h3 {
+            margin-top: 0;
+            grid-column: span 2;
+        }
+        #audios audio {
+            width: 100%;
+        }
+        #lista {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            width: 100%;
+            max-width: 300px;
+            margin-top: 1rem;
+        }
+        #lista h3 {
+            margin-top: 0;
+         }
+        .centered {
+            text-align: center;
+            font-weight: bold;
+            margin: 2rem auto;
+        }
+        .centered img {
+            display: block;
+            margin: 0 auto;
+            max-width: 400;
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\iesidh.png" alt="Imagen izquierda">
+            <h1>Tipos de violencia</h1>
+            <img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\variacion7.jpg" alt="Imagen derecha">
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#articulos">Artículos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#revista-pdf">Revista Completa</a>
+        <a href="#lista">Contenidos</a>
+    </nav>
+
+    <div class="container">
+        <section id="articulos">
+            <h2>Artículos Destacados</h2>
+            <div class="articles">
+                <article class="article">
+                    <img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Violencia Feminicida.jpeg" alt="Violencia Feminicida">
+                    <h3>Violencia Feminicida</h3>
+                    <p>La violencia feminicida constituye la forma extrema de violencia contra las mujeres, producto de la violación de sus derechos humanos y que puede culminar en homicidio u otras formas de muerte
+violenta de mujeres. </p>
+<p> Pág 39 </p>
+                </article>
+                <article class="article">
+                    <img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Violencia de Género.jpeg" alt="Artículo 2">
+                    <h3>Violencia de Género</h3>
+                    <p>La violencia de género es cualquier tipo de agresión ejercida a alguna persona o grupo de persona, basada en su orientación o identidad sexual, sexo o género.</p>
+                    <p> Pág 16 </p>
+                </article>
+                <article class="article">
+                    <img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Ley Malena.jpeg" alt="Artículo 3">
+                    <h3>Ley Malena</h3>
+                    <p>María Elena Ríos Ortiz, estudiante de música (saxofonista) y comunicación. A los 26 años de edad, en 2019, fue víctima de tentativa de feminicidio. El caso de Elena Ríos, a quien le gusta ser nombrada como Malena, se volvió mediático, lo que generó fuera investigada y retomada por diversos congresos locales en México. </p>
+                <p> Pág 40 </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería</h2>
+<p> Proceso del diseño de la revista género.</p>
+            <div class="articles">
+                <img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Pruebas 2.jpeg">
+                <img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Prueba 11.jpeg">
+                <img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Pruebas 3.jpeg">
+<img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Pruebas.jpeg">
+<img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Prueba 7.jpeg">
+<img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Prueba 8.jpeg">
+<img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Prueba 9.jpeg">
+<img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\prueba 10 (2).jpeg">
+<img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Pruebas 1.jpeg">
+              
+                <img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\prueba 6.jpeg">
+            </div>
+        </section>
+ <div class="centered">
+            <p>Visita a la Instancia Ejecutora del Sistema Integral de Derechos Humanos de la Ciudad de México</p>
+            <img src="C:\Users\lizbe\OneDrive\Escritorio\HTML\Imagenes\Visita IESIDH.jpeg" alt="Visita IESIDH">
+        </div>
+        <section id="revista-pdf">
+            <iframe src="C:\Users\lizbe\OneDrive\Escritorio\HTML\PROYECTO GÉNERO.pdf" title="Revista Digital"></iframe>
+                <a class="btn-download" href="C:\Users\lizbe\OneDrive\Escritorio\HTML\PROYECTO GÉNERO.pdf" download>Descargar Revista PDF</a>
+            <div id="audios">
+                <h3>Audios</h3>
+                <audio id="audio-bienvenida" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Bienvenida.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-introduccion" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Introducción.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-genero" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Género.m4a"type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-dif-genero-sexo" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Dif. Género y Sexo.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-expresion-genero" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Expresión de Género.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-orientacion-sexual" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Orientación Sexual.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-identidad-genero" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Identidad de género.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-caracteristicas-sexuales" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Características Sexuales.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-lenguaje-inclusivo" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Lenguaje inclusivo.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-genero" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia de Género.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-tipos-violencia" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Tipos de violencia.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-vicaria" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia Vicaria.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-economica" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia Económica.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-derechos-reproductivos" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia Derechos Reproductivos.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-obstetrica" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia Obstetrica.m4a"type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-psicoemocional" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia psicoemocional.m4a"type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-patrimonial" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia Patrimonial.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-sexual" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia Sexual.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-simbolica" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia Simbólica.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-fisica" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia Física.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-violencia-feminicida" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Violencia Feminicida.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-ley-violencia-acido" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Ley Violencia de Ácido.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <audio id="audio-ley-malena" controls>
+                    <source src="C:\Users\lizbe\OneDrive\Escritorio\HTML\AUDIOS\Ley Malena.m4a" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+            
+            <div id="lista">
+                <h3>Contenidos</h3>
+                <ul>
+                    <li><a href="#" onclick="reproducirAudio('audio-bienvenida')">Bienvenida</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-introduccion')">Introducción</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-genero')">Género</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-dif-genero-sexo')">Dif. Género y Sexo</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-expresion-genero')">Expresión de Género</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-orientacion-sexual')">Orientación Sexual</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-identidad-genero')">Identidad de Género</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-caracteristicas-sexuales')">Características Sexuales</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-lenguaje-inclusivo')">Lenguaje Inclusivo</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-genero')">Violencia de Género</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-tipos-violencia')">Tipos de Violencia</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-vicaria')">Violencia Vicaria</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-economica')">Violencia Económica</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-derechos-reproductivos')">Violencia Derechos Reproductivos</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-obstetrica')">Violencia Obstetrica</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-psicoemocional')">Violencia Psicoemocional</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-patrimonial')">Violencia Patrimonial</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-sexual')">Violencia Sexual</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-simbolica')">Violencia Simbólica</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-fisica')">Violencia Física</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-violencia-feminicida')">Violencia Feminicida</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-ley-violencia-acido')">Ley Violencia de Ácido</a></li>
+                    <li><a href="#" onclick="reproducirAudio('audio-ley-malena')">Ley Malena</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Revista Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function reproducirAudio(id) {
+            var audios = document.querySelectorAll('audio');
+            audios.forEach(function(audio) {
+                audio.pause(); // Pausar cualquier audio que esté en reproducción
+                audio.currentTime = 0; // Reiniciar el tiempo del audio
+            });
+
+            var audio = document.getElementById(id);
+            audio.play(); // Reproducir el audio correspondiente
+        }
+    </script>
+</body>
+</html>
